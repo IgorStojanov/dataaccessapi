@@ -1,0 +1,16 @@
+{
+  "plugin": {
+    "promptValues": {
+      "pluginName": "test-1",
+      "projectRoot": "lib",
+      "pluginType": "application",
+      "applicationType": "serverSidePlugin",
+      "applicationTypefullStackApplication": "fullStackPlugin",
+      "pluginDescription": "test1",
+      "pluginAuthor": "Igor Stojanov",
+      "pluginCopyright": "MIT",
+      "advOptions": false
+    }
+  },
+  "generator-loopback": {}
+}
