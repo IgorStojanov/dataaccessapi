@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Location": {
+    "dataSource": null,
+    "public": true
+  },
+  "Translation": {
+    "dataSource": null,
+    "public": true
   }
 }
