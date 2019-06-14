@@ -16,6 +16,10 @@ npm install
 node server.js
 ```
 
+This should start the server on port 3000:
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+
 Since I couldn't build your application, I created a server side app using LoopBack](http://loopback.io).
 
 I created two data models that match the description of your request. However, since I could not connect to the actual data that exists in your SQL tables, the current API doesn't contain any DATA. Loopback itself has many connectors that can connect to SQL or NoSQL databases, but this takes more time to setup.
@@ -39,6 +43,8 @@ npm install
 ```
 npm start
 ```
+
+Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/
 
 ![Client](img/front-endKLM.png)
 On the client side I am using Angular. Since the server doesn't contain any DATA, I connected it to a public flight API and I simply display it in the home angular component.
