@@ -21,29 +21,20 @@ Since I couldn't build your application, I created a server side app using LoopB
 I created two data models that match the description of your request. However, since I could not connect to the actual data that exists in your SQL tables, the current API doesn't contain any DATA. Loopback itself has many connectors that can connect to SQL or NoSQL databases, but this takes more time to setup.
 
 This is the exposed REST API.
-
-## REST API
-
 ![Client](img/backend-lb1.png)
 
 The data is exposed through REST API and based on your assignment request the data has to be secured by authentication. I have made only WRITE DATA (POST) secured by authentication. See image below what happens we try to do POST. An authentication error is thrown.
 ![Client](img/backend-error.png)
-=================================
+
 | Location |
 |===============================|
 | id integer (generated) |
 | code varchar |
-| type varchar |<-------|
+| type varchar |
 | longitude double | |
-| latitude double | | parent:  
- | parent integer | | relation between locations
-================================= | airport -> city, city -> country  
- | | |
-| | |
-| --------------------------
-|
-|
-==================================
+| latitude double | |
+| parent integer | |
+
 | Translation |
 |================================|
 | id integer (generated)|
@@ -51,7 +42,6 @@ The data is exposed through REST API and based on your assignment request the da
 | language varchar |
 | name varchar |
 | description varchar |
-==================================
 
 ## Client
 
