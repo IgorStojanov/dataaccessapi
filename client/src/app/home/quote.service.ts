@@ -4,7 +4,9 @@ import { Observable, of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 const routes = {
-  quote: (c: RandomQuoteContext) => `/jokes/random?category=${c.category}`
+  //https://api.skypicker.com/locations?type=slug&term=albany-new-york-united-states&locale=en-US&active_only=true
+  quote: (c: RandomQuoteContext) =>
+    `locations?type=slug&term=albany-new-york-united-states&locale=en-US&active_only=true`
 };
 
 export interface RandomQuoteContext {
@@ -21,7 +23,7 @@ export class QuoteService {
       .cache()
       .get(routes.quote(context))
       .pipe(
-        map((body: any) => body.value),
+        map((body: any) => body.locations),
         catchError(() => of('Error, could not load joke :-('))
       );
   }
