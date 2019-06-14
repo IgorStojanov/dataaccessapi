@@ -26,23 +26,6 @@ This is the exposed REST API.
 The data is exposed through REST API and based on your assignment request the data has to be secured by authentication. I have made only WRITE DATA (POST) secured by authentication. See image below what happens we try to do POST. An authentication error is thrown.
 ![Client](img/backend-error.png)
 
-| Location |
-|===============================|
-| id integer (generated) |
-| code varchar |
-| type varchar |
-| longitude double | |
-| latitude double | |
-| parent integer | |
-
-| Translation |
-|================================|
-| id integer (generated)|
-| location integer |
-| language varchar |
-| name varchar |
-| description varchar |
-
 ## Client
 
 ### Installation instructions
